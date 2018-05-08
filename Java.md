@@ -102,7 +102,15 @@ public class SubClass {
 
 ## Reflection
 #### What reflection abilities are supported?
+Java has reflection built in to access information on classes, methods, and fields during runtime of a program.
 #### How is reflection used?
+To get information for reflection at run time, the Class, Method, and Field types must be utilized like they are in the example below:
+```
+Class myClass = anObject.class;
+Method[] methods = myClass.getMethods();
+Field[] fields = myClass.getFields();
+```
+Information about each of these can then be found within attributes within these classes.
 
 ## Memory Management
 #### How is it handled?
