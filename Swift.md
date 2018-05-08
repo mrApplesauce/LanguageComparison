@@ -133,16 +133,32 @@ Automatic reference counting is the mechanism at the center of Swift's memory ma
 
 ## Comparisons of References and Values
 #### How are values compared?
+Using == will test to see if the values of two objects are equal while using === will test to see if two objects are referencing the same object instance.
 
 ## Null/Nil References
 #### Which does the language use?
+Swift uses nil.
 #### Does the language have features for handling null/nil references?
+Optionals are implemented to handle the issue of dereferencing nil pointers. The following is an example of an optional being unwrapped before being used to avoid any possibility of dereferencing a nil pointer.
+```
+var name: String?
+if let name = name {
+    //within this block name is assured to be a non-null value
+}
+```
 
 ## Errors and Exception Handling
+Functions methods and initializers can all implement the throws keyword which signifies that exceptions will be thrown. Another way to catch exceptions is to use a do-catch statement. Within the do clause, a try statement will attempt to execute while each catch statement will catch a certain type of exception.
 
 ## Lambda Expressions, Closures, or Functions as Types
+Closures in Swift are the equivalent to lambdas found in other languages. They provide for a way for blocks of code and their functionality to be passed around. Closures are of the following form:
+```
+{(parameters) -> returnType in
+    statements
+}
+```
 
-### Implementation of Listeners and Event Handlers
+## Implementation of Listeners and Event Handlers
 
 ## Singleton
 #### How is a singleton implemented?
