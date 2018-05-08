@@ -1,4 +1,4 @@
-# Kotlin
+# Java
 
 ## Language Purpose/Genesis
 #### Why was the language created?
