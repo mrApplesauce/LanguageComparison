@@ -9,6 +9,7 @@ Swift was made to address many of the common issues faced in programming. One of
 Swift was a replacement for Objective-C which had been previously used by developers on Apple platforms.
 
 ## Unique Features of the Language
+Swift uses optionals which help compat the issue of dereferencing null pointers. It is far to easy to dereference a pointer with a null value and this error would likely crash your program. To stop this, Swift uses optionals which are like a wrapper around primitive data types that force the developer to take precautions when unwrapping the optional and not allowing for the use of null pointers.
 
 ## Name Spaces
 #### How are nemespaces implemented?
@@ -127,7 +128,7 @@ Automatic reference counting is used in Swift meaning that for the majority of c
 #### How does it work?
 As previously mentioned, the automatic reference counting keeps track of the current references kept by the program and automatically allocates and deallocates memory as needed.
 #### Garbage collection?
-When there are no longer any references to an instance, that instance is then automatically deallocated to free up space in memory.
+When there are no longer any references to an instance, that instance is then automatically deallocated to free up space in memory; however, this is done through keeping a count of referenced objects with the automatic reference counter and not a garbage collector.
 #### Automatic reference counting?
 Automatic reference counting is the mechanism at the center of Swift's memory management.
 
