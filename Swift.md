@@ -12,9 +12,9 @@ Swift was a replacement for Objective-C which had been previously used by develo
 
 ## Name Spaces
 #### How are nemespaces implemented?
-Swift does not currently support namespace types within modules.
+Swift organizes its classes into modules.
 #### How are namespaces used?
-Swift does not currently support namespace types within modules.
+Classes within the same module have different levels of access to the methods and fields within one another than classes from different modules.
 
 ## Types
 #### What types does the language support?
@@ -159,16 +159,35 @@ Closures in Swift are the equivalent to lambdas found in other languages. They p
 ```
 
 ## Implementation of Listeners and Event Handlers
+The equivalent of a listener in Swift is a delegate. Delegates are designed to send messages between objects when a specific event occurs.
 
 ## Singleton
 #### How is a singleton implemented?
+The following is an example of a singleton being implemented in Swift:
+```
+class Singleton {
+    //instantiate Singleton variables here
+    
+    static sharedInstance = Singleton()
+    
+    fileprivate init() {
+        //private initializer
+    }
+}
+```
 #### Can it be made thread-safe?
+When implemented using lazy instantiation, singletons are thread-safe in Swift.
 #### Can the singleton instance be lazily instantiated?
+Swift supports lazy instantiation. Using the 'lazy' keyword infront of the declaration of a variable ensures that it will be lazliy instantiated.
 
 ## Procedural Programming
+Procedural programming is the execution of one command after another and in some ways Swift supports this as the majority of programming languages do; however, Swift is a multi-paradigm language and is not solely identified as a procedural programming language.
 
 ## Functional Programming
+Because Swift supports the use of closures which allow for the passing of functions as variables, Swift therefore supports functional programming. That being said, Swift is a multi-paradigm language and does not strictly adhere to functional programming standards.
 
 ## Multithreading
 #### Threads or thread-like abilities
+Swift uses dispatch queues to queue up the execution of multiple different processes. These processes can either be run sequentially or concurrently depending on how they are specified by the developer.
 #### How is multitasking accomplished?
+Swift supports multitasking and this can be accomplished by using a dispatch queue that is setup to run its processes concurrently meaning they will be executing at the same time.
