@@ -2,8 +2,11 @@
 
 ## Language Purpose/Genesis
 #### Why was the language created?
+Swift was created as a programming language to be used by developers on any of Apple's platforms including iOS, macOS, and many others.
 #### What problems was the language trying to address?
+Swift was made to address many of the common issues faced in programming. One of these issues was null pointers and crashes as a result of dereferencing them. Additionally, the language tries to simplify syntax by making it more intuitive and easy to read.
 #### Is the language a reaction to a previous language or a replacement for another language?
+Swift was a replacement for Objective-C which had been previously used by developers on Apple platforms.
 
 ## Unique Features of the Language
 
