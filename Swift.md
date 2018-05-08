@@ -1,4 +1,4 @@
-# Java
+# Swift
 
 ## Language Purpose/Genesis
 #### Why was the language created?
